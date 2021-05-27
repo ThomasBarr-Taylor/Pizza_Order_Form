@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        title Pizza Order
+    body
+        each val in data.order.orderItems
+            ul
+                li= "Toppings " + val.toppingData
+                li= "Size " + val.sizeData
+                li= "Price $" + val.price
+        p= "The total price is $" + data.order.totalPrice
